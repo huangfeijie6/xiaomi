@@ -1,0 +1,122 @@
+@import "mycolor";
+body{
+		background: #f5f5f5;
+	footer{
+		.footer{
+			.container{
+				max-width:1226px;
+				
+				.breadcrumb{
+					background: #fff;
+					border-bottom:1px solid $xm-33;
+					li{
+						a{
+							color:$xm-33;
+							&:hover{
+								color:$xm-orange;
+								text-decoration:none;
+							}
+						}
+					}
+					.breadcrumb-item+.breadcrumb-item:before{
+						content:"";
+					}
+				}
+				.row{
+					.col-10{
+						border-right:1px solid $xm-f9;
+						ul{
+							li:first-child{
+								font-size:14px;
+								color:#424242;
+								margin-bottom:15px;
+								&:hover{
+									color:#424242;
+								}
+							}
+							li{
+								font-size:12px;
+								margin-bottom:7px;
+								a{
+								color:#757575;
+									&:hover{
+										color:$xm-orange;
+										text-decoration:none;
+									}
+									
+								}
+							}
+						}
+					}
+					.col-2{
+						font-size:12px;
+						h5{
+							color:$xm-orange;
+							
+						}
+						p{
+							color:$xm-33;
+						}
+						a{
+							border:1px solid $xm-orange;
+							color:$xm-orange;
+							background: url("../img/index/聊天.png") no-repeat 5px 3px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.container{
+		max-width:1226px;
+		a{
+			font-size: 0.5rem;
+			color: #b0b0b0;
+			&:hover{
+				color:$xm-orange;
+				text-decoration: none;
+			}
+		}
+		font-size: 0.5rem;
+		color:#b0b0b0;
+		.breadcrumb{
+			background: #f5f5f5 url("../img/index/milogo.png") no-repeat;
+			.breadcrumb-item{
+				a{
+					color:#757575;
+					&:hover{
+						color:$xm-orange;
+						text-decoration: none;
+					}
+				}
+			}
+			
+			.breadcrumb-item+.breadcrumb-item::before{
+				content: "|";
+				font-size:0.5rem;
+			}
+			.div{
+				a{
+					color:#b0b0b0;
+					&:hover{
+						color:$xm-orange;
+						text-decoration: none;
+					}
+				}
+			}
+			.img{
+				img{
+					width:85px;
+					height: 28px;
+				}
+			}
+			.footer-mi{
+				font-size:2rem;
+			}
+		}
+		div.text-center{
+			font-size:2rem;
+		}
+	}
+}

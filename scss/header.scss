@@ -1,0 +1,99 @@
+@import "mycolor";
+body{
+	
+	a{
+	  color: #b0b0b0;
+	  font-size: 12px;
+			&:hover{
+				text-decoration: none;
+				color:#eee;
+			}
+		}
+		
+	header{
+		color: #b0b0b0;
+		line-height: 40px;
+		
+		.header{
+			background: $xm-33;
+			
+			.container{
+				max-width:1226px;
+				
+				div{
+					
+					.breadcrumb{
+						background: $xm-33;
+						
+						.breadcrumb-item + .breadcrumb-item::before{
+							content:"|";
+							color:#424242;
+						}
+						
+						.shopping{
+							
+							a{
+								background: #424242 url("../img/index/shop_car.png") no-repeat 15px 8px;
+								
+								&:hover{
+									background: #fff url("../img/index/shop_car_h.png") no-repeat 15px 8px;
+									color:$xm-orange;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		.container{
+			max-width:1226px;
+			
+			.navbar{
+				
+				.col-1{
+					img{
+						background-size: 55px;
+						width: 55px;
+						height: 55px;
+					}
+				}
+				.col-8{
+					
+					li{
+						
+						a{
+							color:$xm-33;
+							font-size:16px;
+							&:hover{
+								color:$xm-orange;
+							}
+						}
+					}
+				}
+				
+				
+				.col-3{
+					
+					input{
+						border: 1px solid #e0e0e0;
+						outline:none;
+						
+						&:hover{
+							border: 1px solid $xm-orange;
+						}
+					}
+					a{
+						border: 1px solid #e0e0e0;
+						padding: 14px 13px 12px 13px;
+						
+						&:hover{
+							border: 1px solid $xm-orange;
+							background: $xm-orange;
+							background-image: url("..img/index/search_h.png");
+						}
+					}
+				}
+			}
+		}
+	}
+}

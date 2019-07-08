@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+		账号:<input type="text" id="uname"><span id="d2"></span><br>
+		密码:<input type="password" id="upwd"><span id="d3"></span><br>
+		<button onclick='show()'>登录</button><br>	
+		<span id="d1"></span>
+		<script>
+			function show(){
+				if(!uname.value){return d2.innerHTML='账号不为空';}
+				if(!upwd.value){return d3.innerHTML='密码不为空'}
+				
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=()=>{
+					if(xhr.status==200&&xhr.readyState==4){
+						var result=xhr.responseText;
+						console.log(result)
+						if(result==1){
+							return d1.innerHTML='登录成功'
+						}else{
+							return d1.innerHTML='密码或者用户名错误'
+						}
+					}
+				}
+				xhr.open('post','/mypro/v1/login',true);
+				xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+				var formdata='uname='+uname.value+'&upwd='+upwd.value;
+				xhr.send(formdata);
+			}
+		</script>
+	</body>
+</html>

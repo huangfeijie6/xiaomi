@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小米商城</title>
+		<link rel="stylesheet" href="../css/bootstrap.css">
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/popper.min.js"></script>
+		<script src="../js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../css/reg.css">
+		<link rel="icon" href="//s01.mifile.cn/favicon.ico">
+	</head>
+	<body>
+		<div class="container clearfix">
+			<div class="reg">
+			<!-- <table></table> -->
+				<img src="../img/reg/milogo.png" alt="小米logo">
+				<h1 class="font my-5">注册小米账号</h1>
+				<form action="" method="" class="m-auto text-center w-50">
+					<div>
+						<input class="form-control form-text my-3  " id="uname" type="text" placeholder="昵称">
+					</div>
+					<div>
+						<input class="form-control form-text my-3  " id="upwd" type="password" placeholder="密码">
+					</div>
+					<div>
+						<input class="form-control form-text my-3  " id="uemail" type="text" placeholder="邮箱">
+					</div>
+					<div>
+						<input class="form-control form-text my-3  " id="phone" type="text" placeholder="手机号码">
+					</div>
+					<div>
+						<input class="form-control form-text my-3  " id="rname" type="text" placeholder="真实姓名">
+					</div>
+					<div class="button">
+						<button onclick="show()" class="btn w-100 btn-success rounded-0 border-0 py-3 mt-2">立即注册</button>
+					</div>
+					<div class="mt-5">
+						<input type="radio" id="demo" class="mt-1">
+						<label for="demo" >注册帐号即表示您同意并愿意遵守小米<span>用户协议</span> 和 <span>隐私政策</span></label>
+					</div>
+				</form>
+				</div>
+			<footer>
+				<p class="text-center">简体&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;繁体&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;English&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;常见问题</p>
+				<p class="text-center">小米公司版权所有-京ICP备10046444-<img src="../img/reg/ghs.png" alt="" class="mb-2">京公网安备11010802020134号-京ICP证110507号</p>
+			</footer>
+			</div>
+			
+		<script>
+			
+			function show(){
+				var sexInp=document.getElementsByTagName('input');
+				console.log(sexInp);
+				for(var i=0;i<sexInp.length;i++){
+					if(sexInp[i].checked){
+						var sex=sexInp[i].value
+					}
+				}
+				
+				var xhr=new XMLHttpRequest();
+				xhr.onreadystatechange=()=>{
+					if(xhr.status==200&&xhr.readyState==4){
+						var result=xhr.responseText;
+					}
+				}
+				xhr.open('post','/mypro/v1/reg',true);
+				xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded')
+				var formdata='uname='+uname.value+'&upwd='+upwd.value+'&sex='+sex+'&phone='+phone.value+'&uemail='+uemail.value+'&rname='+rname.value;
+				xhr.send(formdata);
+			}
+		</script>
+	</body>
+</html>

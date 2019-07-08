@@ -1,0 +1,73 @@
+@charset "UTF-8";
+body {
+  background: #f5f5f5; }
+  body footer .footer .container {
+    max-width: 1226px; }
+    body footer .footer .container .breadcrumb {
+      background: #fff;
+      border-bottom: 1px solid #333; }
+      body footer .footer .container .breadcrumb li a {
+        color: #333; }
+        body footer .footer .container .breadcrumb li a:hover {
+          color: #ff6700;
+          text-decoration: none; }
+      body footer .footer .container .breadcrumb .breadcrumb-item + .breadcrumb-item:before {
+        content: ""; }
+    body footer .footer .container .row .col-10 {
+      border-right: 1px solid #f9f9f9; }
+      body footer .footer .container .row .col-10 ul li:first-child {
+        font-size: 14px;
+        color: #424242;
+        margin-bottom: 15px; }
+        body footer .footer .container .row .col-10 ul li:first-child:hover {
+          color: #424242; }
+      body footer .footer .container .row .col-10 ul li {
+        font-size: 12px;
+        margin-bottom: 7px; }
+        body footer .footer .container .row .col-10 ul li a {
+          color: #757575; }
+          body footer .footer .container .row .col-10 ul li a:hover {
+            color: #ff6700;
+            text-decoration: none; }
+    body footer .footer .container .row .col-2 {
+      font-size: 12px; }
+      body footer .footer .container .row .col-2 h5 {
+        color: #ff6700; }
+      body footer .footer .container .row .col-2 p {
+        color: #333; }
+      body footer .footer .container .row .col-2 a {
+        border: 1px solid #ff6700;
+        color: #ff6700;
+        background: url("../img/index/聊天.png") no-repeat 5px 3px; }
+  body .container {
+    max-width: 1226px;
+    font-size: 0.5rem;
+    color: #b0b0b0; }
+    body .container a {
+      font-size: 0.5rem;
+      color: #b0b0b0; }
+      body .container a:hover {
+        color: #ff6700;
+        text-decoration: none; }
+    body .container .breadcrumb {
+      background: #f5f5f5 url("../img/index/milogo.png") no-repeat; }
+      body .container .breadcrumb .breadcrumb-item a {
+        color: #757575; }
+        body .container .breadcrumb .breadcrumb-item a:hover {
+          color: #ff6700;
+          text-decoration: none; }
+      body .container .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+        content: "|";
+        font-size: 0.5rem; }
+      body .container .breadcrumb .div a {
+        color: #b0b0b0; }
+        body .container .breadcrumb .div a:hover {
+          color: #ff6700;
+          text-decoration: none; }
+      body .container .breadcrumb .img img {
+        width: 85px;
+        height: 28px; }
+      body .container .breadcrumb .footer-mi {
+        font-size: 2rem; }
+    body .container div.text-center {
+      font-size: 2rem; }
