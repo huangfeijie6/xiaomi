@@ -1,28 +1,49 @@
 body .container {
   max-width: 1226px; }
-  body .container .col-6 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  body .container .row .col-6 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
     content: "|"; }
-  body .container .col-6 .breadcrumb .breadcrumb-item a {
+  body .container .row .col-6 .breadcrumb .breadcrumb-item a {
     color: #616161;
     text-decoration: none;
     font-size: 12px; }
-    body .container .col-6 .breadcrumb .breadcrumb-item a h5 {
+    body .container .row .col-6 .breadcrumb .breadcrumb-item a h5 {
       font-size: 18px; }
-    body .container .col-6 .breadcrumb .breadcrumb-item a:hover {
+    body .container .row .col-6 .breadcrumb .breadcrumb-item a:hover {
       color: #ff6700; }
-  body .container .col-6 .breadcrumb button {
-    background: #ff6700;
-    color: #fff; }
-  body .container .col-6 .breadcrumb.float-right .breadcrumb-item + .breadcrumb-item::before {
+  body .container .row .col-6 .breadcrumb.float-right .breadcrumb-item + .breadcrumb-item::before {
     content: "|";
     color: #eee; }
-  body .container .col-6 .breadcrumb.float-right .breadcrumb-item a {
+  body .container .row .col-6 .breadcrumb.float-right .breadcrumb-item a {
     font-size: 14px;
     color: #616161;
     text-decoration: none; }
-    body .container .col-6 .breadcrumb.float-right .breadcrumb-item a:hover {
-      color: body .container .col-6 .breadcrumb.float-right .breadcrumb-item a:hover xm-orange; }
-  body .container .col-6 .breadcrumb.float-right button {
+    body .container .row .col-6 .breadcrumb.float-right .breadcrumb-item a:hover {
+      color: #ff6700; }
+  body .container .row .col-6 .breadcrumb.float-right button {
     font-size: 12px;
+    cursor: pointer;
+    border: none;
     background: #ff6700;
-    color: #fff; }
+    color: #fff;
+    outline: none; }
+    body .container .row .col-6 .breadcrumb.float-right button:hover {
+      background: #FE5500; }
+
+body .row .carousel ul li {
+  transform: 0.5s; }
+  body .row .carousel ul li:hover {
+    cursor: pointer;
+    background: #eee; }
+
+body .container {
+  max-width: 1226px; }
+  body .container .d-flex {
+    flex-wrap: wrap; }
+    body .container .d-flex div {
+      width: 20%;
+      color: #848484;
+      font-size: 0.7rem; }
+      body .container .d-flex div h5 {
+        font-weight: 600;
+        font-size: 1.1rem;
+        color: #000; }
