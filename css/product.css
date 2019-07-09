@@ -29,8 +29,30 @@ body .container {
     body .container .row .col-6 .breadcrumb.float-right button:hover {
       background: #FE5500; }
 
+body .row .carousel .position-relative div {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  width: 100%;
+  transition: opacity 0.8s,transform 0.8s; }
+  body .row .carousel .position-relative div span {
+    font-size: 2.5rem;
+    color: #fff; }
+  body .row .carousel .position-relative div h1 {
+    font-size: 6rem;
+    color: #fff; }
+  body .row .carousel .position-relative div p {
+    font-size: 2rem;
+    color: #ecb41f; }
+
+body .row .carousel .carousel-inner .active {
+  transition: .5s linear;
+  opacity: 1; }
+  body .row .carousel .carousel-inner .active:hover {
+    opacity: 0.5; }
+
 body .row .carousel ul li {
-  transform: 0.5s; }
+  transform: 0.5s linear; }
   body .row .carousel ul li:hover {
     cursor: pointer;
     background: #eee; }
@@ -47,3 +69,39 @@ body .container {
         font-weight: 600;
         font-size: 1.1rem;
         color: #000; }
+
+body .container-fluid .position-relative {
+  background: url("../img/pro/cpu.jpg");
+  color: #eee;
+  font-size: 3rem; }
+  body .container-fluid .position-relative .py-5 {
+    padding-left: 25%; }
+
+body .cpu {
+  padding-left: 25%;
+  padding-right: 25%; }
+  body .cpu h3 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 700; }
+  body .cpu h5 {
+    font-size: 1rem; }
+  body .cpu .clearfix .box {
+    width: 245px;
+    float: left;
+    height: 120px;
+    border: 1px solid #b2b2b2;
+    text-align: center; }
+    body .cpu .clearfix .box .h5 {
+      font-weight: 700; }
+      body .cpu .clearfix .box .h5 p {
+        margin-bottom: 0.1rem; }
+  body .cpu .span {
+    margin-top: 1rem;
+    color: #8d8d8d;
+    font-size: 0.75rem; }
+  body .cpu .img {
+    background: #000 url("../img/pro/play.jpg") no-repeat;
+    background-size: cover;
+    height: 465px; }
