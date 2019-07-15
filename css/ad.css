@@ -71,7 +71,7 @@ body .container {
         color: #000; }
 
 body .container-fluid .position-relative {
-  background: url("../img/pro/cpu.jpg");
+  background: url("../img/ad/cpu.jpg");
   color: #eee;
   font-size: 3rem; }
   body .container-fluid .position-relative .py-5 {
@@ -102,6 +102,6 @@ body .cpu {
     color: #8d8d8d;
     font-size: 0.75rem; }
   body .cpu .img {
-    background: #000 url("../img/pro/play.jpg") no-repeat;
+    background: #000 url("../img/ad/play.jpg") no-repeat;
     background-size: cover;
     height: 465px; }

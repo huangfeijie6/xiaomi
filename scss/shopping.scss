@@ -1,0 +1,56 @@
+@import "mycolor";
+body{
+	header{
+		border-bottom: 2px solid $xm-orange;
+		.w-100{
+			background: #fff;
+			max-width: 1226px;
+			color:#757575;
+			font-size:12px;
+			
+			.img-middle{
+				vertical-align: top;
+			}
+			h2{
+				color: #424242;
+			}
+			.float-right{
+				padding-top:15px; 
+				a{
+					color:#757575;
+					
+				}
+			}
+		}
+	}
+	.container-fluid{
+		background-color: #f5f5f5;
+		.table{
+			max-width:1226px;
+			background: #fff;
+			.d-flex{
+				img{
+					vertical-align: middle;
+				}
+				div{
+					// text-align: center;
+					line-height: 90px;
+				}
+				.col-2{
+					span{
+						padding: 7px;
+						border:1px solid #000;
+					}
+					.bor{
+						
+					}
+				}
+			}
+			
+			
+			
+		}
+		
+		
+	}
+}

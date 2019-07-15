@@ -1,0 +1,194 @@
+@import "mycolor";	
+body{
+	a{
+		color:$xm-orange;
+		&:hover{
+			color: $xm-orange;
+			text-decoration: none;
+		}
+	}
+	.container{
+		color:#000;
+		max-width:1224px;
+		font-size: 14px;
+		.img{
+			.img-con{
+				position: fixed;
+				.ui-wrap{
+					.pro-img{
+					position: relative;
+					background: #fff url("../img/pro/pms_1550642185.33171962.jpg") no-repeat;
+					background-size: cover;
+					position: relative;
+					width: 560px;
+					height: 560px;
+					}
+				}
+			}
+		}
+		.article{
+			.details{
+				h3{
+					color:#000;
+				}
+				.span{
+					color:$xm-b0;
+					span{
+						color:#ff4a00;
+					}
+				}
+				.detail{
+					p{
+						color: $xm-orange;
+					}
+					span{
+						color:$xm-orange;
+						font-size:18px;
+					}
+					.del{
+						text-decoration: line-through;
+						color:$xm-b0;
+					}
+				}
+			}
+			.btn{
+				color:#fff;
+				font-size:0.875rem;
+				background: $xm-orange;
+			}
+			.location{
+				border:1px solid #E0e0e0;
+				background: #fafafa url("../img/pro/定位.png") no-repeat 25px 27px;
+				span{
+					margin-right: 10px;
+				}
+				span:last-child{
+					color:$xm-orange;
+				}
+			}
+			.edition{
+				h5{
+					color:#333333;
+				}
+				
+				.row{
+					font-size:16px;
+					.col-6{
+						.border{
+							img{
+								margin-right: 10px;
+							}
+							span{
+								margin-right: 20px;
+								vertical-align: bottom;
+							}
+							span+span{
+								color:$xm-b0;
+							}
+						}
+						.active{
+							border: 1px solid $xm-orange !important;
+							span{
+								margin-right: 20px;
+								color:$xm-orange;
+							}
+							span+span{
+								color:#757575;
+							}
+						}
+					}
+				}
+			}
+			
+			.accident{
+				margin-top: 20px;
+				.top{
+					.col-6{
+						h5{
+							color: $xm-33;
+						}
+					}
+				}
+				
+				.acc{
+					background: url("../img/pro/pms_1550560290.8631216.jpg") no-repeat 57px 25px;
+					@include my_bd(1px,$xm-e0);
+					padding-left:120px;
+					h5{
+						color:$xm-33;
+					}
+					span{
+						color:$xm-b0;
+					}
+					.read{
+						input{
+							background: #000;
+						}
+						color:#333;
+						span{
+							color:#757575;
+						}
+					}
+				}
+				
+			}
+			
+			.total{
+				background: #f9f9f9;
+				.float-right{
+					.del{
+							text-decoration: line-through;
+					}
+				}
+				
+				h4{
+					color:$xm-orange;
+					padding-top: 20px;
+				}
+			}
+			
+			.shopping{
+				.btn{
+					border-radius: 0%;
+					font-size: 16px;
+				}
+				.btn1{
+					padding: 0px;
+					line-height: 52px;
+					width: 300px;
+					transition:.5s linear;
+					&:hover{
+						background-color: #f25807;
+						border-color: #f25807;
+					}
+				}
+				.btn2{
+					padding: 0px;
+					line-height: 52px;
+					width: 140px;
+					background: $xm-b0 url("../img/pro/喜欢.png") no-repeat 25px 17px;
+					&:hover{
+						background-color: #757575;
+						border-color: #757575;
+					}
+				}
+				.policy{
+					color:$xm-b0;
+					
+					span{
+						padding-left: 20px;
+						margin-right: 10px;
+						background: url("../img/pro/勾.png") no-repeat;
+					}
+				}
+			}
+		}
+	}
+	.price{
+		.price-on{
+			max-width:1224px;
+			
+		}
+		background: #f5f5f5;
+	}
+}

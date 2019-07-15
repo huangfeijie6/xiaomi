@@ -1,3 +1,12 @@
 $xm-orange:#ff6700;
 $xm-f9:#f9f9f9;
 $xm-33:#333;
+$xm-b0:#b0b0b0;
+$xm-e0:#e0e0e0;
+$xm-33:#333;
+@mixin my_bd($width,$color){
+	border:$width solid $color;
+}
+@mixin my_linear(){
+	
+}

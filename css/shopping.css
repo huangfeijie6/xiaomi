@@ -1,0 +1,28 @@
+body header {
+  border-bottom: 2px solid #ff6700; }
+  body header .w-100 {
+    background: #fff;
+    max-width: 1226px;
+    color: #757575;
+    font-size: 12px; }
+    body header .w-100 .img-middle {
+      vertical-align: top; }
+    body header .w-100 h2 {
+      color: #424242; }
+    body header .w-100 .float-right {
+      padding-top: 15px; }
+      body header .w-100 .float-right a {
+        color: #757575; }
+
+body .container-fluid {
+  background-color: #f5f5f5; }
+  body .container-fluid .table {
+    max-width: 1226px;
+    background: #fff; }
+    body .container-fluid .table .d-flex img {
+      vertical-align: middle; }
+    body .container-fluid .table .d-flex div {
+      line-height: 90px; }
+    body .container-fluid .table .d-flex .col-2 span {
+      padding: 7px;
+      border: 1px solid #000; }

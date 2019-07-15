@@ -1,0 +1,118 @@
+@charset "UTF-8";
+body a {
+  color: #ff6700; }
+  body a:hover {
+    color: #ff6700;
+    text-decoration: none; }
+
+body .container {
+  color: #000;
+  max-width: 1224px;
+  font-size: 14px; }
+  body .container .img .img-con {
+    position: fixed; }
+    body .container .img .img-con .ui-wrap .pro-img {
+      position: relative;
+      background: #fff url("../img/pro/pms_1550642185.33171962.jpg") no-repeat;
+      background-size: cover;
+      position: relative;
+      width: 560px;
+      height: 560px; }
+  body .container .article .details h3 {
+    color: #000; }
+  body .container .article .details .span {
+    color: #b0b0b0; }
+    body .container .article .details .span span {
+      color: #ff4a00; }
+  body .container .article .details .detail p {
+    color: #ff6700; }
+  body .container .article .details .detail span {
+    color: #ff6700;
+    font-size: 18px; }
+  body .container .article .details .detail .del {
+    text-decoration: line-through;
+    color: #b0b0b0; }
+  body .container .article .btn {
+    color: #fff;
+    font-size: 0.875rem;
+    background: #ff6700; }
+  body .container .article .location {
+    border: 1px solid #E0e0e0;
+    background: #fafafa url("../img/pro/定位.png") no-repeat 25px 27px; }
+    body .container .article .location span {
+      margin-right: 10px; }
+    body .container .article .location span:last-child {
+      color: #ff6700; }
+  body .container .article .edition h5 {
+    color: #333333; }
+  body .container .article .edition .row {
+    font-size: 16px; }
+    body .container .article .edition .row .col-6 .border img {
+      margin-right: 10px; }
+    body .container .article .edition .row .col-6 .border span {
+      margin-right: 20px;
+      vertical-align: bottom; }
+    body .container .article .edition .row .col-6 .border span + span {
+      color: #b0b0b0; }
+    body .container .article .edition .row .col-6 .active {
+      border: 1px solid #ff6700 !important; }
+      body .container .article .edition .row .col-6 .active span {
+        margin-right: 20px;
+        color: #ff6700; }
+      body .container .article .edition .row .col-6 .active span + span {
+        color: #757575; }
+  body .container .article .accident {
+    margin-top: 20px; }
+    body .container .article .accident .top .col-6 h5 {
+      color: #333; }
+    body .container .article .accident .acc {
+      background: url("../img/pro/pms_1550560290.8631216.jpg") no-repeat 57px 25px;
+      border: 1px solid #e0e0e0;
+      padding-left: 120px; }
+      body .container .article .accident .acc h5 {
+        color: #333; }
+      body .container .article .accident .acc span {
+        color: #b0b0b0; }
+      body .container .article .accident .acc .read {
+        color: #333; }
+        body .container .article .accident .acc .read input {
+          background: #000; }
+        body .container .article .accident .acc .read span {
+          color: #757575; }
+  body .container .article .total {
+    background: #f9f9f9; }
+    body .container .article .total .float-right .del {
+      text-decoration: line-through; }
+    body .container .article .total h4 {
+      color: #ff6700;
+      padding-top: 20px; }
+  body .container .article .shopping .btn {
+    border-radius: 0%;
+    font-size: 16px; }
+  body .container .article .shopping .btn1 {
+    padding: 0px;
+    line-height: 52px;
+    width: 300px;
+    transition: .5s linear; }
+    body .container .article .shopping .btn1:hover {
+      background-color: #f25807;
+      border-color: #f25807; }
+  body .container .article .shopping .btn2 {
+    padding: 0px;
+    line-height: 52px;
+    width: 140px;
+    background: #b0b0b0 url("../img/pro/喜欢.png") no-repeat 25px 17px; }
+    body .container .article .shopping .btn2:hover {
+      background-color: #757575;
+      border-color: #757575; }
+  body .container .article .shopping .policy {
+    color: #b0b0b0; }
+    body .container .article .shopping .policy span {
+      padding-left: 20px;
+      margin-right: 10px;
+      background: url("../img/pro/勾.png") no-repeat; }
+
+body .price {
+  background: #f5f5f5; }
+  body .price .price-on {
+    max-width: 1224px; }
