@@ -13,54 +13,76 @@
 		
 	</head>
 	<body>
-		<header>
-			<div class="py-4 w-100 m-auto">
-				<div class="d-inline-block">
+		<header> 
+			<div class="py-4 w-100 m-auto row">
+				<div class="header col-7 px-0">
 					<img src="../img/reg/milogo.png" class="img-middle" alt="">
-				<h2 class="d-inline pl-5 pr-3">我的购物车</h2>
-				<span>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</span>
+					<h2 class="d-inline pl-5 pr-3 my-0">我的购物车</h2>
+					<div>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</div>
 				</div>
-				<div class="float-right d-block"><a href="#">登录</a> | <a href="#">注册</a></div>
+				<div class="right col-5 px-0 mx-0"><a href="#">登录</a>&nbsp;|&nbsp;<a href="#">注册</a></div>
 			</div>
-		</header>
-		<div class="container-fluid">
-			<div class="table m-auto">
-				<div class="d-flex p-3">
-					<div class="col-2"><input type="checkbox">全选</div>
+		</header> 
+		
+		<div class="container-fluid py-5">
+			<div class="table m-auto mt-3 ">
+				
+				<div class="d-flex p-3 bg-white">
+					<div class="col-2">
+						<input type="checkbox" id="chball">
+						<label for="chball">&nbsp;&nbsp;&nbsp;全选</label>
+					</div>
 					<div class="col-5">商品名称</div>
-					<div class="col-1">单价</div>
-					<div class="col-2">数量</div>
-					<div class="col-1">小计</div>
-					<div class="col-1">操作</div>
-				</div>
-				<div class="d-flex p-3">
-					<div class="col-2"><input type="checkbox"><img src="../img/shopping/pms_1553001921.97126644!80x80.jpg" alt=""></div>
-					<div class="col-5">小米9 全网通版 8GB内存 透明 256GB</div>
-					<div class="col-1">3699元</div>
-					<div class="col-2">
-						<div class="bor">
-							<button class="btn">-</button><span>1</span><button class="btn">+</button>
-						</div>
-					</div>
-					<div class="col-1">3699元</div>
-					<div class="col-1">x</div>
-				</div>
-				<div class="d-flex p-3">
-					<div class="col-2"><input type="checkbox"><img src="../img/shopping/pms_1553001921.97126644!80x80.jpg" alt=""></div>
-					<div class="col-5">小米9 全网通版 6GB内存 全息幻彩紫 128GB</div>
-					<div class="col-1">2799元</div>
-					<div class="col-2">
-						<div class="bor">
-							<button class="btn">-</button><span>1</span><button class="btn">+</button>
-						</div>
-					</div>
-					<div class="col-1">2799元</div>
-					<div class="col-1">x</div>
+					<div class="col-1 text-center">单价</div>
+					<div class="col-2 text-center">数量</div>
+					<div class="col-1 text-center">小计</div>
+					<div class="col-1 text-center">操作</div>
 				</div>
 				
+				<div class="flex p-3">
+					<div class="col-2">
+						<input type="checkbox" id="d1">
+						<label for="d1"><img src="../img/shopping/pms_1553001921.97126644!80x80.jpg" alt=""></label>
+					</div>
+					<div class="col-5">小米9 全网通版 8GB内存 透明 256GB</div>
+					<div class="col-1 text-center price">3699元</div>
+					<div class="col-2 btn1">
+						<div class="bor">
+							<button class="btn">-</button><div class="num px-1">1</div><button class="btn">+</button>
+						</div>
+					</div>
+					<div class="col-1 text-center ">3699元</div>
+					<div class="col-1 text-center">
+						<button type="button">x</button>
+					</div>
+				</div>
+				
+				<div class="flex p-3">
+					<div class="col-2 ">
+						<input type="checkbox" id="d2">
+						<label for="d2"><img src="../img/shopping/pms_1550642185.33171962!80x80.jpg" alt=""></label>
+					</div>
+					<div class="col-5">小米9 全网通版 6GB内存 全息幻彩紫 128GB</div>
+					<div class="col-1 text-center price">2799元</div>
+					<div class="col-2 btn1">
+						<div class="bor">
+							<button class="btn">-</button><div class="num px-1">1</div><button class="btn">+</button>
+						</div>
+					</div>
+					<div class="col-1 text-center ">2799元</div>
+					<div class="col-1 text-center">
+						<button type="button">x</button>
+					</div>
+				</div>
+			
+				<div class="add bg-white">
+					<div class="col-1"><a href="javascript:;">继续购物</a></div>
+					<div class="col-5">共<span>2</span>件商品，已选择<span>0</span>件</div>
+					<div class="col-4 text-right"><span>合计：<b>0</b>元</span></div>
+					<div class="col-2 px-0 mx-0"><button class="btn rounded-0">去结算</button></div>
+				</div>
 			</div>
 		</div>
-		
 		<script src="../js/shopping.js"></script>
 	</body>
 </html>

@@ -18,7 +18,8 @@ body header {
           content: "|";
           color: #424242; }
         body header .header .container div .breadcrumb .shopping a {
-          background: #424242 url("../img/index/shop_car.png") no-repeat 15px 8px; }
+          background: #ff6700 url("../img/index/shop_car.png") no-repeat 15px 8px;
+          color: #fff; }
           body header .header .container div .breadcrumb .shopping a:hover {
             background: #fff url("../img/index/shop_car_h.png") no-repeat 15px 8px;
             color: #ff6700; }
@@ -28,11 +29,17 @@ body header {
       background-size: 55px;
       width: 55px;
       height: 55px; }
-    body header .container .navbar .col-8 li a {
-      color: #333;
-      font-size: 16px; }
-      body header .container .navbar .col-8 li a:hover {
-        color: #ff6700; }
+    body header .container .navbar .col-8 li:first-child {
+      opacity: 0; }
+    body header .container .navbar .col-8 li {
+      display: block; }
+      body header .container .navbar .col-8 li:hover {
+        display: none; }
+      body header .container .navbar .col-8 li a {
+        color: #333;
+        font-size: 16px; }
+        body header .container .navbar .col-8 li a:hover {
+          color: #ff6700; }
     body header .container .navbar .col-3 input {
       border: 1px solid #e0e0e0;
       outline: none; }

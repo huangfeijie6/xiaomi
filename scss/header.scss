@@ -31,10 +31,9 @@ body{
 						}
 						
 						.shopping{
-							
 							a{
-								background: #424242 url("../img/index/shop_car.png") no-repeat 15px 8px;
-								
+								background: $xm-orange url("../img/index/shop_car.png") no-repeat 15px 8px;
+								color: #fff;
 								&:hover{
 									background: #fff url("../img/index/shop_car_h.png") no-repeat 15px 8px;
 									color:$xm-orange;
@@ -58,8 +57,16 @@ body{
 					}
 				}
 				.col-8{
-					
+					li:first-child{
+						// display:none;
+						opacity: 0;
+					}
 					li{
+						display: block;
+						&:hover{
+							display: none;
+						}
+						
 						
 						a{
 							color:$xm-33;
