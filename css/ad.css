@@ -29,27 +29,30 @@ body .container {
     body .container .row .col-6 .breadcrumb.float-right button:hover {
       background: #FE5500; }
 
-body .row .carousel .position-relative div {
+body .row .carousel .position-relative .d-block {
   position: absolute;
   z-index: 1;
   top: 20px;
   width: 100%;
-  transition: opacity 0.8s,transform 0.8s; }
-  body .row .carousel .position-relative div span {
+  opacity: 0;
+  transition: 2s; }
+  body .row .carousel .position-relative .d-block span {
     font-size: 2.5rem;
     color: #fff; }
-  body .row .carousel .position-relative div h1 {
+  body .row .carousel .position-relative .d-block h1 {
     font-size: 6rem;
     color: #fff; }
-  body .row .carousel .position-relative div p {
+  body .row .carousel .position-relative .d-block p {
     font-size: 2rem;
     color: #ecb41f; }
+
+body .row .carousel .position-relative .in {
+  opacity: 1;
+  top: -10px; }
 
 body .row .carousel .carousel-inner .active {
   transition: .5s linear;
   opacity: 1; }
-  body .row .carousel .carousel-inner .active:hover {
-    opacity: 0.5; }
 
 body .row .carousel ul li {
   transform: 0.5s linear; }
@@ -75,28 +78,55 @@ body .container-fluid .position-relative {
   color: #eee;
   font-size: 3rem; }
   body .container-fluid .position-relative .py-5 {
+    position: relative;
+    top: 50px;
+    opacity: 0;
+    transition: 1.8s;
     padding-left: 25%; }
+  body .container-fluid .position-relative .in {
+    opacity: 1;
+    top: 10px; }
 
 body .cpu {
   padding-left: 25%;
-  padding-right: 25%; }
+  padding-right: 25%;
+  transition: 3s; }
   body .cpu h3 {
     font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    font-weight: 700; }
+    font-weight: 700;
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    transition: 1.8s; }
   body .cpu h5 {
-    font-size: 1rem; }
-  body .cpu .clearfix .box {
-    width: 245px;
-    float: left;
-    height: 120px;
-    border: 1px solid #b2b2b2;
-    text-align: center; }
-    body .cpu .clearfix .box .h5 {
-      font-weight: 700; }
-      body .cpu .clearfix .box .h5 p {
-        margin-bottom: 0.1rem; }
+    font-size: 1rem;
+    position: relative;
+    top: 30px;
+    opacity: 0;
+    transition: 1.8s; }
+  body .cpu .in {
+    opacity: 1;
+    top: 0px; }
+  body .cpu .clearfix {
+    position: relative;
+    top: 40px;
+    opacity: 0;
+    transition: 1.8s; }
+    body .cpu .clearfix .box {
+      width: 245px;
+      float: left;
+      height: 120px;
+      border: 1px solid #b2b2b2;
+      text-align: center; }
+      body .cpu .clearfix .box .h5 {
+        font-weight: 700; }
+        body .cpu .clearfix .box .h5 p {
+          margin-bottom: 0.1rem; }
+  body .cpu .in {
+    opacity: 1;
+    top: 0px; }
   body .cpu .span {
     margin-top: 1rem;
     color: #8d8d8d;

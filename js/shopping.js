@@ -11,7 +11,7 @@ let chbAll=document.querySelector(".table>.d-flex>.col-2>input");
 
 	table.onclick=function(e){
 		let btn=e.target;
-		// console.log(btn)
+		// console.log(btn);
 		if(btn.innerHTML=="-"||btn.innerHTML=="+"){//加减按钮
 			let span=btn.parentNode.children[1];
 			// console.log(span);
@@ -85,13 +85,12 @@ let chbAll=document.querySelector(".table>.d-flex>.col-2>input");
 			table.removeChild(btn.parentNode.parentNode);
 		}
 			totalCount();
-
 	}
 
 
 
 
-var totalCount=function(){
+let totalCount=function(){
 		let chbs=document.querySelectorAll(".table>.flex>.col-2>input:checked");
 		var totalPrice=0;
 		let num=0;

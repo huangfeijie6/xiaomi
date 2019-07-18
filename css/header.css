@@ -29,12 +29,8 @@ body header {
       background-size: 55px;
       width: 55px;
       height: 55px; }
-    body header .container .navbar .col-8 li:first-child {
-      opacity: 0; }
     body header .container .navbar .col-8 li {
       display: block; }
-      body header .container .navbar .col-8 li:hover {
-        display: none; }
       body header .container .navbar .col-8 li a {
         color: #333;
         font-size: 16px; }
