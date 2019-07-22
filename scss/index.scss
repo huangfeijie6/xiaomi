@@ -51,6 +51,7 @@ body{
 					display:block;
 					color: #fff;
 					text-decoration: none;
+					font-size:1rem;
 						&:hover{
 							background: $xm-orange url("../img/index/右箭头.png") no-repeat 170px 12px;
 						}
@@ -58,13 +59,61 @@ body{
 				}
 			}
 		}
-		.col-2{
+		
+		
+		.col-2.mt-3{
 			background: #5f5750;
 			.row{
+				.col-4:nth-child(1){
+					background: url('../img/index/手机到手机.png') no-repeat 23px 25px;
+					&:hover{
+						background-image: url('../img/index/手机到手机_h.png');
+					}
+				}
+				.col-4:nth-child(2){
+					background: url('../img/index/礼包.png') no-repeat 23px 25px;
+					&:hover{
+						background-image: url('../img/index/礼包_h.png');
+					}
+				}
+				.col-4:nth-child(3){
+					background: url('../img/index/小米商城F码.png') no-repeat 16px 20px;
+					&:hover{
+						background-image: url('../img/index/小米商城F码_h.png');
+					}
+				}
+				.col-4:nth-child(4){
+					background: url('../img/index/拦截手机卡.png') no-repeat 22px 28px;
+					&:hover{
+						background-image: url('../img/index/拦截手机卡_h.png');
+					}
+				}
+				.col-4:nth-child(5){
+					background: url('../img/index/回收.png') no-repeat 23px 27px;
+					&:hover{
+						background-image: url('../img/index/回收_h.png');
+					}
+				}
+				.col-4:nth-child(6){
+					background: url('../img/index/银行卡.png') no-repeat 22px 27px;
+					&:hover{
+						background-image: url('../img/index/银行卡_h.png');
+					}
+				}
 				.col-4{
 					font-size:12px;
 					color: #dddad7;
-					// border:1px solid #f5f5ff;
+					a{
+						display: flex;
+						justify-content: center;
+						align-items: flex-end;
+						color: #D6D4D3;
+						height: 75px;
+						&:hover{
+							text-decoration: none;
+							color: #fff;
+						}
+					}
 				}
 			}
 		}
@@ -74,7 +123,6 @@ body{
 	}
 	section{
 		background-color: #f5f5f5;
-		
 		.container{
 			max-width:1226px;
 			font-size:12px;
@@ -83,56 +131,55 @@ body{
 				color:#333333;
 				text-decoration: none;
 			}
-				a.float-right{
-					font-size: 1rem;
-					position: relative;
-					transition:0.3s linear;
-					z-index: 99;
+			a.float-right{
+				font-size: 1rem;
+				position: relative;
+				transition:0.3s linear;
+				z-index: 99;
+				div{
+					position: absolute;
+					z-index: 0;
+					border-radius:50%;
+					right: -4px;
+					top: 3px;
+					width: 20px;
+					height: 20px;
+					transition: 0.3s linear;
+					background-color: #b0b0b0;
+					background-image: url("../img/index/箭头.png");
+					background-position: 5px 4px;
+					background-repeat: no-repeat;
+				}
+				&:hover{
+					color:$xm-orange;
 					div{
-						position: absolute;
-						z-index: 0;
-						border-radius:50%;
-						right: -4px;
-						top: 3px;
-						width: 20px;
-						height: 20px;
-						transition: 0.3s linear;
-						background-color: #b0b0b0;
-						background-image: url("../img/index/箭头.png");
-						background-position: 5px 4px;
-						background-repeat: no-repeat;
-					}
-					&:hover{
-						color:$xm-orange;
-						div{
-							background-color: $xm-orange;
-							
-						}
+						background-color: $xm-orange;
 					}
 				}
-				.row{
-					.col-10{
-						.col-12{
-							.col-3{
-								max-width: 24%;
-								background: #fff;
-								flex-grow:0.5;
-								transition: 0.4s linear;
-								&:hover{
-									top:-3px;
-									box-shadow:0px -2px 32px 1px #aaa;
-								}
-								
-								.num:first-of-type{
-									color: #e00;
-								}
-								.num+.num{
-									text-decoration: line-through;
-								}
+			}
+			.row{
+				.col-10{
+					.col-12{
+						.col-3{
+							max-width: 24%;
+							background: #fff;
+							flex-grow:0.5;
+							transition: 0.4s linear;
+							&:hover{
+								top:-3px;
+								box-shadow:0px -2px 32px 1px #aaa;
+							}
+							
+							.num:first-of-type{
+								color: #e00;
+							}
+							.num+.num{
+								text-decoration: line-through;
 							}
 						}
 					}
 				}
+			}
 		}
 	}
 }

@@ -1,11 +1,10 @@
 @import "mycolor";
 body{
-		background: #f5f5f5;
 	footer{
-		.footer{
+		background: #f5f5f5;
+		.footer.bg-white{
 			.container{
 				max-width:1226px;
-				
 				.breadcrumb{
 					background: #fff;
 					border-bottom:1px solid $xm-33;
@@ -52,7 +51,6 @@ body{
 						font-size:12px;
 						h5{
 							color:$xm-orange;
-							
 						}
 						p{
 							color:$xm-33;
@@ -68,7 +66,7 @@ body{
 		}
 	}
 
-	.container{
+	.container.px-0{
 		max-width:1226px;
 		a{
 			font-size: 0.5rem;
@@ -80,7 +78,7 @@ body{
 		}
 		font-size: 0.5rem;
 		color:#b0b0b0;
-		.breadcrumb{
+		.breadcrumb.rounded-0{
 			background: #f5f5f5 url("../img/index/milogo.png") no-repeat;
 			.breadcrumb-item{
 				a{
@@ -115,7 +113,7 @@ body{
 				font-size:2rem;
 			}
 		}
-		div.text-center{
+		div.text-center:last{
 			font-size:2rem;
 		}
 	}

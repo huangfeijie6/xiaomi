@@ -1,6 +1,6 @@
 @import "mycolor";
 body{
-	
+	header{
 	a{
 	  color: #b0b0b0;
 	  font-size: 12px;
@@ -9,8 +9,6 @@ body{
 				color:#eee;
 			}
 		}
-		
-	header{
 		color: #b0b0b0;
 		line-height: 40px;
 		
@@ -50,21 +48,20 @@ body{
 			.navbar{
 				
 				.col-1{
-					img{
-						background-size: 55px;
-						width: 55px;
-						height: 55px;
+					a{
+						display: block;
+						width: 48px;
+						height: 48px;
+						background: $xm-orange url('../img/index/小米.png') no-repeat 6px 6px;
+						&:hover{
+							// background: #000;
+						}
 					}
 				}
-				.col-8{
-					li:first-child{
-						// display:none;
-						// opacity: 0;
-					}
-					li{
+				ul.col-8{
+					li.pare{
+						position: relative;
 						display: block;
-						
-						
 						a{
 							color:$xm-33;
 							font-size:16px;
@@ -72,32 +69,89 @@ body{
 								color:$xm-orange;
 							}
 						}
+						
+						ul.dropdown-content{
+							  display: none;
+							  position: absolute;
+							  background-color: #ff00ff;
+							  width: 100vw;
+							  // width: 100%;
+							  // min-width: 1900px;
+							  top:73px;
+							  // left: -468px;
+							  // padding: 12px 16px;
+							  z-index: 1;
+							  list-style: none;
+							  li{
+								  
+							  }
+							}
+						&:hover{
+							ul.dropdown-content{
+								display: flex;
+								justify-content: space-around;
+								// max-width: 1224px;
+								
+							}
+						}
+						
+						
+						
+						// ul.dropdown-content{
+						// 	  display: none;
+						// 	  position: absolute;
+						// 	  background-color: #ff00ff;
+						// 	  min-width: 1900px;
+						// 	  top:73px;
+						// 	  left: -468px;
+						// 	  padding: 12px 16px;
+						// 	  z-index: 1;
+						// 	  list-style: none;
+						// 	  li{
+						// 		  
+						// 	  }
+						// 	}
+						// &:hover{
+						// 	ul.dropdown-content{
+						// 		display: flex;
+						// 		justify-content: space-around;
+						// 		max-width: 1224px;
+						// 		
+						// 	}
+						// }
 					}
 				}
 				
 				
 				.col-3{
-					
+					display: flex;
+					justify-content: flex-end;
 					input{
 						border: 1px solid #e0e0e0;
+						padding: 0;
 						outline:none;
 						
 						&:hover{
 							border: 1px solid $xm-orange;
 						}
 					}
+					
 					a{
 						border: 1px solid #e0e0e0;
-						padding: 14px 13px 12px 13px;
-						
+						border-left: none;
+						width: 42px;
+						height: 42px;
+						background: url("../img/index/search.png") no-repeat 11px 11px;
 						&:hover{
 							border: 1px solid $xm-orange;
-							background: $xm-orange;
-							background-image: url("..img/index/search_h.png");
+							background: $xm-orange url("../img/index/search_h.png") no-repeat 11px 11px;
 						}
 					}
 				}
 			}
 		}
+	}
+	hr{
+		margin: 0;
 	}
 }

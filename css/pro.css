@@ -9,15 +9,13 @@ body .container {
   color: #000;
   max-width: 1224px;
   font-size: 14px; }
-  body .container .img .img-con {
-    position: fixed; }
-    body .container .img .img-con .ui-wrap .pro-img {
-      position: relative;
-      background: #fff url("../img/pro/pms_1550642185.33171962.jpg") no-repeat;
-      background-size: cover;
-      position: relative;
-      width: 560px;
-      height: 560px; }
+  body .container .col-6.img .img-con .ui-wrap .pro-img {
+    position: relative;
+    background: #fff url("../img/pro/pms_1550642185.33171962.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 560px;
+    height: 560px; }
   body .container .article .details h3 {
     color: #000; }
   body .container .article .details .span {

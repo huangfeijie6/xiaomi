@@ -1,13 +1,13 @@
-body a {
-  color: #b0b0b0;
-  font-size: 12px; }
-  body a:hover {
-    text-decoration: none;
-    color: #eee; }
-
+@charset "UTF-8";
 body header {
   color: #b0b0b0;
   line-height: 40px; }
+  body header a {
+    color: #b0b0b0;
+    font-size: 12px; }
+    body header a:hover {
+      text-decoration: none;
+      color: #eee; }
   body header .header {
     background: #333; }
     body header .header .container {
@@ -25,26 +25,48 @@ body header {
             color: #ff6700; }
   body header .container {
     max-width: 1226px; }
-    body header .container .navbar .col-1 img {
-      background-size: 55px;
-      width: 55px;
-      height: 55px; }
-    body header .container .navbar .col-8 li {
+    body header .container .navbar .col-1 a {
+      display: block;
+      width: 48px;
+      height: 48px;
+      background: #ff6700 url("../img/index/小米.png") no-repeat 6px 6px; }
+    body header .container .navbar ul.col-8 li.pare {
+      position: relative;
       display: block; }
-      body header .container .navbar .col-8 li a {
+      body header .container .navbar ul.col-8 li.pare a {
         color: #333;
         font-size: 16px; }
-        body header .container .navbar .col-8 li a:hover {
+        body header .container .navbar ul.col-8 li.pare a:hover {
           color: #ff6700; }
-    body header .container .navbar .col-3 input {
-      border: 1px solid #e0e0e0;
-      outline: none; }
-      body header .container .navbar .col-3 input:hover {
-        border: 1px solid #ff6700; }
-    body header .container .navbar .col-3 a {
-      border: 1px solid #e0e0e0;
-      padding: 14px 13px 12px 13px; }
-      body header .container .navbar .col-3 a:hover {
-        border: 1px solid #ff6700;
-        background: #ff6700;
-        background-image: url("..img/index/search_h.png"); }
+      body header .container .navbar ul.col-8 li.pare ul.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #ff00ff;
+        width: 100vw;
+        top: 73px;
+        z-index: 1;
+        list-style: none; }
+      body header .container .navbar ul.col-8 li.pare:hover ul.dropdown-content {
+        display: flex;
+        justify-content: space-around; }
+    body header .container .navbar .col-3 {
+      display: flex;
+      justify-content: flex-end; }
+      body header .container .navbar .col-3 input {
+        border: 1px solid #e0e0e0;
+        padding: 0;
+        outline: none; }
+        body header .container .navbar .col-3 input:hover {
+          border: 1px solid #ff6700; }
+      body header .container .navbar .col-3 a {
+        border: 1px solid #e0e0e0;
+        border-left: none;
+        width: 42px;
+        height: 42px;
+        background: url("../img/index/search.png") no-repeat 11px 11px; }
+        body header .container .navbar .col-3 a:hover {
+          border: 1px solid #ff6700;
+          background: #ff6700 url("../img/index/search_h.png") no-repeat 11px 11px; }
+
+body hr {
+  margin: 0; }

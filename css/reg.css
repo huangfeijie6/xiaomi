@@ -30,3 +30,6 @@ body {
     width: 1000px;
     height: 200px;
     margin-left: 60px; }
+.form-control:disabled{
+	background: #fff;
+}
