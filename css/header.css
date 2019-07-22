@@ -1,5 +1,6 @@
 @charset "UTF-8";
 body header {
+  position: relative;
   color: #b0b0b0;
   line-height: 40px; }
   body header a {
@@ -12,72 +13,88 @@ body header {
     background: #333; }
     body header .header .container {
       max-width: 1226px; }
-      body header .header .container div .breadcrumb {
+      body header .header .container > div .breadcrumb {
         background: #333; }
-        body header .header .container div .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+        body header .header .container > div .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
           content: "|";
           color: #424242; }
-        body header .header .container div .breadcrumb .shopping a {
+        body header .header .container > div .breadcrumb .shopping a {
           background: #ff6700 url("../img/index/shop_car.png") no-repeat 15px 8px;
           color: #fff; }
-          body header .header .container div .breadcrumb .shopping a:hover {
+          body header .header .container > div .breadcrumb .shopping a:hover {
             background: #fff url("../img/index/shop_car_h.png") no-repeat 15px 8px;
             color: #ff6700; }
   body header .container {
     max-width: 1226px; }
-    body header .container .navbar .col-1 a {
-      display: block;
-      width: 48px;
-      height: 48px;
-      background: #ff6700 url("../img/index/小米.png") no-repeat 6px 6px; }
-    body header .container .navbar ul.col-8 li.pare {
-      position: relative;
-      display: block; }
-      body header .container .navbar ul.col-8 li.pare a {
-        color: #333;
-        font-size: 16px; }
-        body header .container .navbar ul.col-8 li.pare a:hover {
-          color: #ff6700; }
-      body header .container .navbar ul.col-8 li.pare ul.dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #ff00ff;
-        width: 100vw;
-        top: 73px;
-        z-index: 1;
-        list-style: none; }
-      body header .container .navbar ul.col-8 li.pare:hover ul.dropdown-content {
+    body header .container .navbar {
+      position: inherit !important; }
+      body header .container .navbar .col-1 a {
+        display: block;
+        width: 48px;
+        height: 48px;
+        background: #ff6700 url("../img/index/小米.png") no-repeat 6px 6px; }
+      body header .container .navbar ul.col-8 {
+        position: inherit !important; }
+        body header .container .navbar ul.col-8 li.pare {
+          display: block; }
+          body header .container .navbar ul.col-8 li.pare a {
+            color: #333;
+            font-size: 16px; }
+            body header .container .navbar ul.col-8 li.pare a:hover {
+              color: #ff6700; }
+          body header .container .navbar ul.col-8 li.pare .pare1 {
+            display: none;
+            position: absolute;
+            border-top: 1px solid #e0e0e0;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0px 5px 10px #e0e0e0;
+            width: 100%;
+            top: 117px;
+            z-index: 1; }
+          body header .container .navbar ul.col-8 li.pare:hover .pare1 {
+            display: flex;
+            justify-content: space-around; }
+            body header .container .navbar ul.col-8 li.pare:hover .pare1 ul.dropdown-content {
+              list-style: none;
+              padding-left: 0px;
+              max-width: 1226px;
+              display: flex;
+              justify-content: space-around; }
+              body header .container .navbar ul.col-8 li.pare:hover .pare1 ul.dropdown-content li {
+                text-align: center;
+                padding-top: 30px; }
+                body header .container .navbar ul.col-8 li.pare:hover .pare1 ul.dropdown-content li img {
+                  width: 100%; }
+      body header .container .navbar .col-3 {
         display: flex;
-        justify-content: space-around; }
-    body header .container .navbar .col-3 {
-      display: flex;
-      justify-content: flex-end; }
-      body header .container .navbar .col-3 input {
-        border: 1px solid #e0e0e0;
-        padding: 0;
-        outline: none; }
-        body header .container .navbar .col-3 input:hover {
-          border: 1px solid #ff6700; }
-      body header .container .navbar .col-3 a {
-        border: 1px solid #e0e0e0;
-        border-left: none;
-        width: 42px;
-        height: 42px;
-        background: url("../img/index/search.png") no-repeat 11px 11px; }
-        body header .container .navbar .col-3 a:hover {
-          border: 1px solid #ff6700;
-          background: #ff6700 url("../img/index/search_h.png") no-repeat 11px 11px; }
-    body header .container .navbar #tab {
-      z-index: 1;
-      width: 100vw;
-      left: 0px;
-      display: none; }
-    body header .container .navbar .tab-p {
-      position: fixed;
-      top: 50px;
-      display: flex !important;
-      background: #000;
-      z-index: 1000; }
+        justify-content: flex-end; }
+        body header .container .navbar .col-3 input {
+          border: 1px solid #e0e0e0;
+          padding: 0;
+          outline: none; }
+          body header .container .navbar .col-3 input:hover {
+            border: 1px solid #ff6700; }
+        body header .container .navbar .col-3 a {
+          border: 1px solid #e0e0e0;
+          border-left: none;
+          width: 42px;
+          height: 42px;
+          background: url("../img/index/search.png") no-repeat 11px 11px; }
+          body header .container .navbar .col-3 a:hover {
+            border: 1px solid #ff6700;
+            background: #ff6700 url("../img/index/search_h.png") no-repeat 11px 11px; }
+      body header .container .navbar #tab {
+        z-index: 1;
+        width: 100vw;
+        left: 0px;
+        display: none; }
+      body header .container .navbar .tab-p {
+        position: fixed;
+        top: 67px;
+        display: flex !important;
+        background: #000;
+        z-index: 1000; }
 
 body hr {
   margin: 0; }
