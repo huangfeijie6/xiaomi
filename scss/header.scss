@@ -121,8 +121,6 @@ body{
 						// }
 					}
 				}
-				
-				
 				.col-3{
 					display: flex;
 					justify-content: flex-end;
@@ -148,6 +146,20 @@ body{
 						}
 					}
 				}
+				#tab{
+					z-index: 1;
+					width: 100vw;
+					left: 0px;
+					display: none;
+				}
+				.tab-p{
+					position: fixed;
+					top: 50px;
+					display: flex !important;
+					background: #000;
+					z-index: 1000;
+				}
+				
 			}
 		}
 	}

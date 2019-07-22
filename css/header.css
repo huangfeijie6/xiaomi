@@ -67,6 +67,17 @@ body header {
         body header .container .navbar .col-3 a:hover {
           border: 1px solid #ff6700;
           background: #ff6700 url("../img/index/search_h.png") no-repeat 11px 11px; }
+    body header .container .navbar #tab {
+      z-index: 1;
+      width: 100vw;
+      left: 0px;
+      display: none; }
+    body header .container .navbar .tab-p {
+      position: fixed;
+      top: 50px;
+      display: flex !important;
+      background: #000;
+      z-index: 1000; }
 
 body hr {
   margin: 0; }

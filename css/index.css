@@ -79,8 +79,6 @@ body .container {
         body .container .col-2.mt-3 .row .col-4 a:hover {
           text-decoration: none;
           color: #fff; }
-  body .container .col-12 {
-    background: url("../img/index/long1.jpg"); }
 
 body section {
   background-color: #f5f5f5; }

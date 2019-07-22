@@ -119,5 +119,4 @@ let totalCount=function(){
 		totalpro=document.querySelector(".table .add .col-5 span:first-child");
 		totalpro.innerHTML=totalnum;
 		
-		// console.log(totalPrice)
 	}
